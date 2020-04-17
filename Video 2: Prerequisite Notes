@@ -1,0 +1,20 @@
+Prerequisites and Installation
+
+1.	Docker
+	https://docs.docker.com/docker-for-windows/
+	a.	Prerequisites
+		i.	Windows
+			1.	Windows 10 Pro-Enterprise (won’t work on home version)
+			2.	Hyper-v installed and running
+				a.	Check virtualization under ‘performance’ in task manager
+				b.	If it’s not enabled, enable it by searching “Turn Windows features on or off”
+	b.	Download Docker Desktop installer (from docker hub)
+		i.	https://hub.docker.com/editions/community/docker-ce-desktop-windows/
+		ii.	Different options (Choose “Linux containers”)
+		iii.	Once installed, open powershell
+			1.	Check version (docker --version)
+			2.	Run hello-world (docker run hello-world)
+				a.	Verify that it worked
+					i.	It will download and display a message form docker
+			3.	Pull an image of the Ubuntu OS (docker run --interactive --tty ubunto bash)
+				a.	Exit (exit)
